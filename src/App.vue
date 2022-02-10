@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     setupGame() {
-      this.target = 'hello' //words[Math.floor(Math.random() * words.length)]
+      this.target = words[Math.floor(Math.random() * words.length)]
       this.guesses = ['']
       this.results = new Array(5).fill('-----')
       this.keyStatus = {

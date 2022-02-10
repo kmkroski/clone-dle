@@ -1,4 +1,8 @@
-# clone-dle
+# Simple Infinite Wordle Clone in Vue 3
+
+Five letter word list sourced from: https://www-cs-faculty.stanford.edu/~knuth/sgb-words.txt
+
+Colors sourced from: [Flat UI Colors](https://flatuicolors.com/)
 
 ## Project setup
 ```

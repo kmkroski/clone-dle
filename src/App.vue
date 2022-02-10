@@ -4,7 +4,7 @@
   <Keyboard :keyStatus="keyStatus" @keydown="handleKeydown" />
 
   <ModalContainer v-if="state !== 'play'" @close="closeModal">
-    <ModalCorrect v-if="state === 'win'" :target="target" />
+    <ModalCorrect v-if="state === 'win'" :target="target" :results="results" />
     <ModalInvalid v-if="state === 'invalid'" :word="guesses[guesses.length - 1]" />
     <ModalWrong v-if="state === 'lose'" :target="target" />
   </ModalContainer>

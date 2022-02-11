@@ -2,10 +2,34 @@
   <div class="modalContainer">
     <div class="modal">
       <slot />
-      <button class="modalButton" @click="$emit('close')">OK</button>
+      <button class="modalButton" @click="closeModal">OK</button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'ModalContainer',
+  mounted() {
+    window.addEventListener('keydown', this.handleKeydown)
+  },
+  unmounted() {
+    window.removeEventListener('keydown', this.handleKeydown)
+  },
+  methods: {
+    handleKeydown(key) {
+      console.log('hhhh')
+      if (key.key === 'Enter') {
+        this.closeModal()
+      }
+    },
+    closeModal() {
+      this.$emit('close')
+    },
+  },
+}
+</script>
+
 
 <style>
 .modalContainer {

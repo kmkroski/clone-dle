@@ -56,14 +56,15 @@ export default {
 }
 
 .keyboardKey {
-  min-width: 2rem;
-  height: 3rem;
-  margin: 0.25rem;
+  min-width: 2.25rem;
+  height: 4rem;
+  margin: 0.125rem;
   padding: 0.5rem;
   background-color: #2c3e50;
   color: #ecf0f1;
   border: none;
   border-radius: 0.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
